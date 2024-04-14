@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TubeCourse App - Where YouTube Learning Happens</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="TubeCourse" />
+  <meta name="msapplication-config" content="favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" href="favicons/favicon.ico">
+  <link rel="apple-touch-icon" type="image/png" href="favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="favicons/manifest.json">
+  <link rel="stylesheet" media="all" href="assets/css/styles.css" data-turbo-track="reload" />
+</head>
+
+<body style="background: #fafbfc;">
+  <style>
+    .themed-btn {
+      background-color: #C2D6F5;
+      color: #0445AF;
+    }
+
+    .themed-btn:hover {
+      filter: brightness(85%);
+      color: #0445AF;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+    }
+
+    .themed-select {
+      background-color: transparent !important;
+      color: #FFFFFF !important;
+      border: none;
+      text-align: right;
+      padding-right: 3px;
+      opacity: 0.7;
+      box-shadow: none !Important;
+      appearance: none;
+      direction: rtl;
+    }
+
+    .themed-select:active {
+      direction: ltr;
+    }
+
+    .bg-themed {
+      background-color: #C2D6F5;
+    }
+  </style>
+
+  <style>
+    .themed-navbar .navbar-brand {
+      color: #FFFFFF;
+    }
+
+    .themed-navbar .nav-link {
+      color: #FFFFFF;
+      opacity: 0.7;
+    }
+
+    .themed-icon-color {
+      color: #FFFFFF;
+      opacity: 0.7;
+    }
+
+    .themed-navbar .nav-link:hover,
+    .themed-navbar .focused {
+      color: #FFFFFF;
+      opacity: 1;
+    }
+
+    .hamburger-menu {
+      border-color: #FFFFFF;
+    }
+
+    .hamburger-menu .line {
+      background-color: #FFFFFF;
+    }
+  </style>
+
+
+  <nav class="navbar navbar-expand-lg themed-navbar" , style="background-color: #0445AF;">
+    <a class="navbar-brand" href="index.html">TubeCourse App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="hamburger-menu">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto themed-navlinks">
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <div class="row mr-3">
+        </div>
+        <span class="navbar-text">
+          <p class="p-0 m-0 nav-link disabled">Have an account?</p>
+        </span> <a class="nav-link btn themed-btn btn-sm ml-2" href="users/sign_in.html">Sign in</a>
+      </ul>
+    </div>
+  </nav>
+
+  <turbo-frame id="flash_message"></turbo-frame>
+
+  <style>
+    .themed-btn {
+      background-color: #C2D6F5;
+      color: #0445AF;
+    }
+
+    .themed-btn:hover {
+      filter: brightness(85%);
+      color: #0445AF;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+    }
+
+    .themed-select {
+      background-color: transparent !important;
+      color: #FFFFFF !important;
+      border: none;
+      text-align: right;
+      padding-right: 3px;
+      opacity: 0.7;
+      box-shadow: none !Important;
+      appearance: none;
+      direction: rtl;
+    }
+
+    .themed-select:active {
+      direction: ltr;
+    }
+
+    .bg-themed {
+      background-color: #C2D6F5;
+    }
+  </style>
+
+  <div class="home-banner card border-top-0 border-left-0 border-right-0 border-bottom rounded-0 mb-2"
+    style="background-image: url('assets/theme-14-academy_background_image-6a60ea63c33a372385fa53494fa44603dc050886c6adae2c667e1bddabd31fa2.svg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card-body row" style="min-height: 350px">
+            <div class="col-md-8 my-auto">
+              <h3 class="card-title" style="color: #173986;">
+                Welcome To A List Of Free Courses To Get More Audience On YouTube!
+              </h3>
+              <p class="card-subtitle" style="color: #173986;"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5" data-controller="search">
+    <div class="d-flex justify-content-end flex-fill pt-1">
+      <form data-action="ajax:success-&gt;search#handleResults" data-search-target="form" class="d-flex w-100 w-md-auto"
+        action="https://tubecourse.app/paths" accept-charset="UTF-8" data-remote="true" method="get">
+        <input type="text" name="search" id="search" class="form-control" required="required"
+          data-action="input-&gt;search#performSearch" data-search-target="input" placeholder="Search for courses" />
+      </form>
+    </div>
+
+    <div data-search-target="output">
+      <div class="d-flex justify-content-between mt-5 mb-3">
+        <div class="d-flex align-items-center">
+          <h3>Collections</h3>
+          <h4> <span class="badge badge-pill badge-secondary ml-3">1</span></h4>
+        </div>
+      </div>
+
+
+      <div class=row style="cursor: pointer;">
+        <div class="col-lg-6 sortable-path" data-id="194">
+          <div style="position: relative; cursor: pointer;">
+            <a class="card-linked" id="folder-linked" href="folders/folders.html">
+              <div class="folder-card mb-3">
+                <div class="folder-img-container" style="width: 100%;">
+                  <img class="folder-img"
+                    src="assets/Course background image.png" alt="course-background"/>
+                </div>
+                <div class="card card-body d-flex flex-row justify-content-between folder-card-body">
+                  <div class="d-flex flex-column">
+                    <h4 class="card-title truncate-title-3 flex-grow-1  mt-3">YouTube</h4>
+                    <div class="text-muted">
+                      2 Courses
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!--Hidden SVG (folder mask)-->
+        <div style="height:0px;width:0px;">
+          <svg viewBox="0 0 100 100">
+            <defs>
+              <clipPath clipPathUnits="objectBoundingBox" id="foldermask">
+                <path class="cls-1"
+                  d="M.981,1H.019C.008,1,0,.983,0,.963V.038C0,.017.008,0,.019,0H.285C.308-.01.372.1.416.141H.981C.992.141,1,.158,1,.179V.963C1,.983.992,1,.981,1Z" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container py-5">
+    <hr>
+    <div class="text-right">
+      <div class="text-muted">
+        <small>
+          © TUBE COURSE
+        </small>
+      </div>
+    </div>
+  </footer>
+  <!-- Slider -->
+
+</body>
+
+</html>

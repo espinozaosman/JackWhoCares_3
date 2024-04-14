@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TubeCourse App - Where YouTube Learning Happens</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="TubeCourse" />
+  <meta name="msapplication-config" content="../favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" href="../favicons/favicon.ico">
+  <link rel="apple-touch-icon" type="image/png" href="favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" type="image/png" href="../favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="../favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="../favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="../favicons/manifest.json">
+  <link rel="stylesheet" media="all" href="../assets/css/styles.css" data-turbo-track="reload" />
+</head>
+
+  <body style="background: #fafbfc;">
+    <style>
+      .themed-btn {
+        background-color: #C2D6F5;
+        color: #0445AF;
+      }
+      .themed-btn:hover {
+        filter: brightness(85%);
+        color: #0445AF;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+      }
+
+      .themed-select {
+        background-color: transparent!important;
+        color: #FFFFFF!important;
+        border: none;
+        text-align: right;
+        padding-right: 3px;
+        opacity: 0.7;
+        box-shadow: none!Important;
+        appearance: none;
+        direction: rtl;
+      }
+
+      .themed-select:active {
+        direction: ltr;
+      }
+
+      .bg-themed {
+        background-color: #C2D6F5;
+      }
+
+</style>
+
+<style>
+
+    .themed-navbar .navbar-brand {
+      color: #FFFFFF;
+    }
+    .themed-navbar .nav-link {
+      color: #FFFFFF;
+      opacity: 0.7;
+    }
+
+    .themed-icon-color {
+      color: #FFFFFF;
+      opacity: 0.7;
+    }
+
+    .themed-navbar .nav-link:hover, .themed-navbar .focused {
+      color: #FFFFFF;
+      opacity: 1;
+    }
+
+    .hamburger-menu {
+      border-color: #FFFFFF;
+    }
+
+    .hamburger-menu .line {
+      background-color: #FFFFFF;
+    }
+
+</style>
+
+
+<nav class="navbar navbar-expand-lg themed-navbar", style="background-color: #0445AF;">
+    <a class="navbar-brand" href="../index.html">TubeCourse App</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="hamburger-menu">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto themed-navlinks">
+      </ul>
+      <ul class="navbar-nav ml-auto">
+          <div class="row mr-3">
+          </div>
+          <span class="navbar-text">
+          <p class="p-0 m-0 nav-link disabled" >Have an account?</p>
+          </span> <a class="nav-link btn themed-btn btn-sm ml-2" href="../users/sign_in.html">Sign in</a>
+      </ul>
+  </div>
+</nav>
+
+    <turbo-frame id="flash_message"></turbo-frame>
+
+    <style>
+      .themed-btn {
+        background-color: #C2D6F5;
+        color: #0445AF;
+      }
+      .themed-btn:hover {
+        filter: brightness(85%);
+        color: #0445AF;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+      }
+
+      .themed-select {
+        background-color: transparent!important;
+        color: #FFFFFF!important;
+        border: none;
+        text-align: right;
+        padding-right: 3px;
+        opacity: 0.7;
+        box-shadow: none!Important;
+        appearance: none;
+        direction: rtl;
+      }
+
+      .themed-select:active {
+        direction: ltr;
+      }
+
+      .bg-themed {
+        background-color: #C2D6F5;
+      }
+
+</style>
+
+    
+<style>
+      .themed-btn {
+        background-color: #C2D6F5;
+        color: #0445AF;
+      }
+      .themed-btn:hover {
+        filter: brightness(85%);
+        color: #0445AF;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+      }
+
+      .themed-select {
+        background-color: transparent!important;
+        color: #FFFFFF!important;
+        border: none;
+        text-align: right;
+        padding-right: 3px;
+        opacity: 0.7;
+        box-shadow: none!Important;
+        appearance: none;
+        direction: rtl;
+      }
+
+      .themed-select:active {
+        direction: ltr;
+      }
+
+      .bg-themed {
+        background-color: #C2D6F5;
+      }
+
+</style>
+
+<div class="card border-0 mb-3"
+  style="min-height:350px;background-color:inherit;background-image: url('https://s3.eu-central-1.amazonaws.com/com.marbleteams/cjm2ypn87xm6qk3cqumd5kzmqidi?response-content-disposition=attachment%3B%20filename%3D%22blank_bg%22%3B%20filename%2A%3DUTF-8%27%27blank_bg&amp;response-content-type=image%2Fsvg%2Bxml&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAS3765NCQU62Y4CMS%2F20240413%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20240413T161457Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=362fabb2827c2f6bdc9ef4bfe43fd5ca448f19264c260ea39786e09fab21f38d');background-size:cover;">
+  <div class="card-body d-flex flex-column justify-content-between">
+    <div class="my-auto p-lg-5">
+      <h1 class="card-title" style="color:#001328;max-width:900px;">How to Promote Your YouTube Videos for FREE</h1>
+      <p class="card-text lead" style="color:#001328;max-width:800px;white-space:pre-wrap;">Looking for free YouTube
+        video promotion?
+        YouTube, the most popular video-sharing website, is a terrific location to promote your material.
+        But with so many videos out there, how do you stand out?
+        So here we are. We&#39;ll show you how to advertise your films for free on YouTube.
+        With our proven tactics, you&#39;ll have a loyal video audience in no time.</p>
+    </div>
+    <div id="path-action" class="pl-lg-5 px-lg-3 d-flex">
+      <a class="btn themed-btn mr-2" rel="nofollow" data-method="post" href="../paths/path_1.html">Start</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 summary-tags-content-block">
+      <div class="card summary-block border-0">
+        <div class="card-body mb-0">
+          <h4 class="card-title"><strong>Summary</strong></h4>
+          <p class="mb-0">
+            Promoting your YouTube videos is a great way to grow your audience and build a community around your brand.
+            Here are some tips on how to do this effectively.
+            * Create engaging, high-quality content that people want to watch.
+            * Start with a video about yourself or what you do for work.
+            * Gain traction by submitting your videos for review on YouTube&#39;s partner channels and get featured on
+            their homepage.
+            * Promote your videos by sharing them to social media, emailing friends and family, or posting them in
+            relevant communities online such as Facebook groups, forums, etc.
+            * Run ads on YouTube to generate revenue from views and clicks from ads.
+          </p>
+        </div>
+      </div>
+      <div class="card border-0 mb-5">
+        <div class="card-body">
+          <div class="mb-4">
+            <h4 class="card-title mb-4"><strong>Content</strong></h4>
+            <div class="d-flex flex-wrap">
+              <div class="mr-4 mb-2 text-center">
+                <img class="mb-2"
+                  src="../assets/kind-text-fce71f6ea804395d0bc491762d408ee8669de84e5100c10cd3b5ac804adf4bc9.svg"
+                  width="30" height="30" />
+                <p class="card-text">1 text</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-md-8">
+      <a class="card-linked" href="../paths/path_1.html">
+        <div class="card border-0 mb-3" style="border-radius:1rem;">
+          <div class="card-horizontal d-flex flex-sm-row flex-column">
+            <div class="card-body d-flex flex-column justify-content-between order-1 order-sm-0"
+              style="position: relative;">
+              <div>
+
+                <h5 class="card-title truncate-title-2">How to Promote Your YouTube Videos?</h5>
+                <p class="card-text text-muted"></p>
+              </div>
+            </div>
+            <img class="filled-avatar order-0 order-sm-1 card-img card-img-fluid card-img-fluid-width"
+              src="../assets/placeholder-text-ab9afe54002a1b45233cba9376ddcb84806115c5c4cfc54d81fb88024e913fd7.svg" />
+            <div class="item-tag">
+              <span>text</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+    <footer class="container py-5">
+      <hr>
+      <div class="text-right">
+        <div class="text-muted">
+          <small>
+            © TUBECOURSE APP
+          </small>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

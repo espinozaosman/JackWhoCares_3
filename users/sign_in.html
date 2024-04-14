@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TubeCourse App - Where YouTube Learning Happens</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="TubeCourse" />
+  <meta name="msapplication-config" content="../favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" href="../favicons/favicon.ico">
+  <link rel="apple-touch-icon" type="image/png" href="../favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" type="image/png" href="../favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="../favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="../favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="../favicons/manifest.json">
+  <link rel="stylesheet" media="all" href="../assets/css/styles.css" data-turbo-track="reload" />
+</head>
+
+<body style="background: #0445AF;" class="">
+  <style>
+    .themed-btn {
+      background-color: #C2D6F5;
+      color: #0445AF;
+    }
+
+    .themed-btn:hover {
+      filter: brightness(85%);
+      color: #0445AF;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+    }
+
+    .themed-select {
+      background-color: transparent !important;
+      color: #FFFFFF !important;
+      border: none;
+      text-align: right;
+      padding-right: 3px;
+      opacity: 0.7;
+      box-shadow: none !Important;
+      appearance: none;
+      direction: rtl;
+    }
+
+    .themed-select:active {
+      direction: ltr;
+    }
+
+    .bg-themed {
+      background-color: #C2D6F5;
+    }
+  </style>
+
+  <div class="temp_information"
+    data-temp="/assets/theme-14-lesson_background_image-153028e9ae560134d2f4e4c22faa3645637a7cda4591246fd12033b6cfa0e8b5.svg">
+  </div>
+  <turbo-frame id="flash_message"></turbo-frame>
+
+
+  <div class="new-tenants">
+    <div class="d-flex justify-content-end align-items-center mb-5">
+      <p class="mr-3 my-3" style=color:#FFFFFF;>No account yet?</p>
+      <a class="btn themed-btn" href="sign_up.html">Sign up</a>
+    </div>
+    <div class="d-flex justify-content-center align-items-center mt-5" style="height: 70%;">
+      <div class="default-card" style="border-radius: 1rem; box-shadow: 1px 1px 4px lightgray; min-width: 50vw;">
+        <div class="card-body">
+          <div class="text-center">
+            <h2 class="mb-4 display-5" style="font-size: 1.5rem;">Sign in to TubeCourse App</h2>
+            <p class="text-muted mb-4">tubecourse.app</p>
+          </div>
+
+          <form class="mb-3" id="new_user" accept-charset="UTF-8"><input type="hidden" />
+            <div class="form-group">
+              <label for="user_email">E-mail</label>
+              <input autofocus="autofocus" placeholder="johndoe@email.com" autocomplete="email" class="form-control"
+                type="email" value="" name="user[email]" id="user_email" />
+            </div>
+
+            <div class="form-group">
+              <label for="user_password">Password</label>
+              <input placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" autocomplete="current-password"
+                class="form-control" type="password" name="user[password]" id="user_password" />
+            </div>
+
+            <div class="form-check mb-3">
+              <input name="user[remember_me]" type="hidden" value="0" /><input class="form-check-input" type="checkbox"
+                value="1" name="user[remember_me]" id="user_remember_me" />
+              <label class="form-check-label" for="user_remember_me">Remember me</label>
+            </div>
+
+            <input type="submit" name="commit" value="Sign in" class="btn themed-btn" data-disable-with="Sign in" />
+            <span>or</span>
+            <a href="sign_up.html">Sign up</a>
+          </form>
+
+
+          <a href="new.html">Forgot your password?</a><br />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
